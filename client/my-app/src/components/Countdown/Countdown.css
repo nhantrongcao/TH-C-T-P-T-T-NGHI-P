@@ -1,0 +1,39 @@
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Khoảng cách giữa các ô countdown */
+    margin-top: 10px;
+  }
+  
+  /* Khối countdown */
+  .countdown-item {
+    width: 80px;
+    height: 90px;
+    display: flex;
+    flex-direction: column; /* Sắp xếp dọc */
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Số đếm to, nổi bật */
+  .countdown-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4b5563; /* text-gray-800 */
+    line-height: 1; /* Đảm bảo không bị dính chữ */
+    margin-bottom: 4px;
+  }
+  
+  /* Đơn vị nhỏ nằm dưới số */
+  .countdown-unit {
+    font-size: 0.75rem; /* text-xs */
+    color: #6b7280; /* text-gray-700 */
+    text-transform: uppercase; /* Viết hoa đơn vị */
+    letter-spacing: 1px; /* Khoảng cách giữa chữ */
+  }
+  

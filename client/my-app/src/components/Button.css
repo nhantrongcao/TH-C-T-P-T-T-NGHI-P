@@ -1,0 +1,30 @@
+/* CSS cho button */
+.button {
+    padding: 15px 30px;  /* Tăng kích thước padding */
+    font-size: 18px;      /* Tăng kích thước chữ */
+    background-color: #007bff;  /* Màu nền của nút */
+    color: white;         /* Màu chữ */
+    border: none;         /* Xóa viền */
+    border-radius: 8px;   /* Bo tròn góc */
+    cursor: pointer;      /* Hiển thị con trỏ chuột khi hover vào nút */
+    transition: background-color 0.3s ease;  /* Hiệu ứng chuyển màu khi hover */
+    display: flex;
+    align-items: center;  /* Căn giữa các phần tử bên trong */
+    justify-content: center;  /* Căn giữa văn bản */
+    text-align: center;
+    max-width: 200px;      /* Giới hạn chiều rộng tối đa */
+    width: auto;           /* Chiều rộng tự động */
+}
+
+.button:hover {
+    background-color: #0056b3;  /* Màu nền khi hover */
+}
+
+.button span {
+    margin: 0 5px; /* Thêm một chút khoảng cách giữa icon và chữ */
+}
+
+/* Nếu có icon, thêm khoảng cách giữa icon và chữ */
+.button svg, .button img {
+    margin-right: 10px;  /* Khoảng cách giữa icon và chữ */
+}

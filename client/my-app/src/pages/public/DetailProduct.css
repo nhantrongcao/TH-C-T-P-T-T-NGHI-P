@@ -1,0 +1,100 @@
+.product-detail12 {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    margin-left: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ không gian */
+}
+
+.product-image12 {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 4;
+}
+
+.product-image12 > img {
+    width: 458px;
+    height: 458px;
+    border: 2px solid #ccc;
+    object-fit: contain; /* Đảm bảo ảnh chính không bị cắt hoặc méo */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+}
+
+.product-image12 > img:hover {
+    border: 2px solid #007bff;  /* Thêm hiệu ứng border khi hover vào ảnh chính */
+}
+
+.sub-images12 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Đảm bảo ảnh phụ xuống dòng khi có ít ảnh */
+    justify-content: space-between;
+}
+
+.sub-images12 img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain; /* Đảm bảo ảnh phụ không bị cắt hoặc méo */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border 0.3s ease, transform 0.2s ease;
+}
+
+.sub-images12 img:hover {
+    border: 2px solid #007bff;
+    transform: scale(1.05);
+}
+.rating-info {
+    color: #f39c12;
+    font-size: 20px;
+  }
+.product-price12 {
+    flex: 3;
+}
+
+.product-info {
+    flex: 3;
+}
+
+.ma-fo {
+    height: 20px;
+}
+.price-info{
+    color: #c70526;
+}
+/* CSS cho nút 'ADD TO CART' */
+.add-to-cart-btn {
+    background-color: #ff6347; /* Màu nền đỏ */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e5533f; /* Màu đỏ đậm khi hover */
+}
+.tensanpham {
+    font-size: 25px;
+    margin-left: 40px;
+}

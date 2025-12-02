@@ -1,0 +1,135 @@
+/* Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.auth-container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Title */
+.auth-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d2d2d;
+}
+
+/* Name fields (firstname + lastname) */
+.name-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 45%;
+}
+
+.input-group.full-width {
+    flex: 100%;
+    min-width: 100%;
+}
+
+/* Footer links */
+.auth-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.auth-link {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.auth-link:hover {
+    color: #0056b3;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Verify and forgot password containers */
+.verify-email-container,
+.forgot-password-container {
+    text-align: center;
+}
+
+.verify-email-container h2,
+.forgot-password-container h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.verify-email-container input {
+    margin: 16px 0;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .auth-container {
+        padding: 20px;
+        margin: 30px 16px;
+    }
+
+    .name-fields {
+        flex-direction: column;
+    }
+
+    .input-group,
+    .input-group.full-width {
+        min-width: 70%;
+    }
+
+    .auth-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #007bff;
+    z-index: 9999;
+}

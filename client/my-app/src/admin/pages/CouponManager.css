@@ -1,0 +1,75 @@
+.coupon-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #f9f9f9;
+    border-radius: 12px;
+  }
+  
+  .coupon-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .coupon-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .coupon-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .coupon-form button {
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .coupon-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .coupon-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .coupon-table th,
+  .coupon-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .coupon-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 6px 10px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  

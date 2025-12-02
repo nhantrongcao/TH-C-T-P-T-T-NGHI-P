@@ -1,0 +1,104 @@
+.product-container {
+    min-width: 200px;
+    max-width: 650px;
+    position: relative;
+    width: 100%;
+    background: #f7e2e2;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    margin-left: 5px;
+    height: 380px;
+    transition: transform 0.3s ease; /* Giữ hover nhanh, slider lâu */
+    box-sizing: border-box;
+}
+
+.product-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Phần hiển thị sao */
+.product-stars {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.select-options-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Hiệu ứng nổi mượt hơn */
+    transform: translateY(10px);
+}
+
+.product-container:hover .select-options-container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.product-stars svg {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.product-stars .filled-star {
+    color: #FFD700;
+}
+
+.product-stars .outline-star {
+    color: #C0C0C0;
+}
+
+/* Hiệu ứng khi hover lên sao */
+.product-stars svg:hover {
+    transform: scale(1.2);
+}
+
+/* Phần nhãn góc */
+.product-label-img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.product-label-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(-15deg);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+/* Hiệu ứng hover sản phẩm */
+.product-container:hover {
+    transform: translateY(-5px);
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+}

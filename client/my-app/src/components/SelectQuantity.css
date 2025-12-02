@@ -1,0 +1,26 @@
+.select-quantity-container {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  .quantity-button {
+    padding: 0.5rem;
+    border: 1px solid black;
+  }
+  
+  .quantity-button:first-child {
+    border-right: none;
+  }
+  
+  .quantity-button:last-child {
+    border-left: none;
+  }
+  
+  .quantity-input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    width: 30px;
+    text-align: center;
+  }
+  

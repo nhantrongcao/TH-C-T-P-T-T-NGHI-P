@@ -1,0 +1,88 @@
+/* Đảm bảo layout chính không bị tràn ngang */
+.w-main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; /* Thêm padding để tránh bị chèn vào cạnh màn hình */
+    box-sizing: border-box; /* Đảm bảo tính padding vào trong chiều rộng */
+}
+
+/* Chia layout Sidebar - Banner */
+.home-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap; /* Không cho phép phần tử tự xuống dòng */
+    width: 100%; /* Đảm bảo chiều rộng 100% */
+    box-sizing: border-box; /* Đảm bảo chiều rộng được tính hợp lý */
+}
+.left-column {
+    display: flex;
+    min-width: 350px; /* Đảm bảo sidebar không quá nhỏ */
+
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    
+}
+
+/* Deal daily cách sidebar một chút */
+.deal-daily {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+}
+/* Sidebar chiếm 25% chiều rộng */
+.sidebar {
+    flex: 0 0 25%; /* Chiếm 25% chiều rộng */
+    box-sizing: border-box; /* Đảm bảo padding không làm phần tử tràn */
+}
+
+/* Cột chứa Banner và BestSeller chiếm 75% còn lại */
+.right-column {
+    flex: 1; /* Cột bên phải chiếm phần còn lại */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm phần tử tràn */
+}
+
+/* Đảm bảo Banner không bị tràn */
+.banner {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; /* Đảm bảo chiều rộng không bị vượt quá */
+    margin-bottom: 20px; /* Khoảng cách dưới Banner */
+}
+
+/* BestSeller nằm dưới banner, full chiều ngang */
+.bestseller-container {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box; /* Đảm bảo chiều rộng không bị vượt quá */
+}
+.FeaturedProducts-layout {
+    margin-top: 30px;
+    width: 100%;
+}
+/* Điều chỉnh cho các màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column; /* Chuyển sang cột khi màn hình nhỏ */
+    }
+
+    .sidebar {
+        flex: 0 0 100%; /* Sidebar chiếm 100% chiều rộng trên mobile */
+        min-width: 0;
+    }
+
+    .right-column {
+        flex: 0 0 100%; /* Cột bên phải chiếm 100% */
+    }
+
+    .banner {
+        margin-bottom: 15px; /* Giảm khoảng cách khi màn hình nhỏ */
+    }
+
+    .bestseller-container {
+        margin-top: 10px; /* Giảm khoảng cách dưới Banner */
+    }
+}

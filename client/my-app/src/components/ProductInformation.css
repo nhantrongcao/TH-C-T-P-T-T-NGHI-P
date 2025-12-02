@@ -1,0 +1,48 @@
+.product-infoma {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.product-infoma span {
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+/* tab đang được chọn */
+.tab-active {
+    background-color: white;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom-color: white;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+/* tab chưa chọn */
+.tab-inactive {
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+}
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-infoma1 {
+    border: 1px solid #ccc;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 4.4px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: fadeSlideIn 0.4s ease-in-out;
+}

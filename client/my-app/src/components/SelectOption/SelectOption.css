@@ -1,0 +1,20 @@
+.select-option {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi hover vào */
+.select-option:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+}

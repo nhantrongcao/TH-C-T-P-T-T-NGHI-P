@@ -1,0 +1,77 @@
+.feature-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Tiêu đề chính */
+  .feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border-bottom: 4px solid #f87171;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid chia 3 cột đều nhau */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Khoảng cách giữa các card */
+    justify-items: center;
+  }
+  .image-container-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Chia 3 cột đều nhau */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    align-items: center;
+  }
+  
+  .image-container-featured {
+    display: grid;
+    grid-template-columns: calc(420px * 1.6) calc(203px * 1.6) calc(203px * 1.6);
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Hình 1 bên trái */
+.img1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: calc(414px * 1.6);
+    height: calc(467px * 1.6);
+}
+
+/* Hình 2 nằm trên ở cột giữa */
+.img2 {
+    grid-column: 2;
+    grid-row: 1;
+    width: calc(197px * 1.6);
+    height: calc(238px * 1.6);
+}
+
+/* Hình 4 nằm dưới ở cột giữa */
+.img4 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 17px;
+    width: calc(197px * 1.6);
+    height: calc(208px * 1.6);
+}
+
+/* Hình 3 bên phải */
+.img3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    width: calc(197px * 1.6);
+    height: calc(467px * 1.6);
+}
+
+/* Style thêm cho hình ảnh đẹp hơn */
+.image-container-featured img {
+    object-fit: cover;
+    border-radius: 8px; /* Bo góc cho đẹp */
+    display: block;
+}

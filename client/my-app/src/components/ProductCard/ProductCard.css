@@ -1,0 +1,71 @@
+/* Card chính nằm ngang */
+.product-card {
+    display: flex;
+    flex-direction: row; /* Đảm bảo xếp ngang */
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    max-width: 400px; /* Điều chỉnh kích thước */
+    height: 120px;
+    gap: 15px; /* Khoảng cách giữa ảnh và thông tin */
+  }
+  
+  /* Hiệu ứng hover */
+  .product-card:hover {
+    transform: translateY(-3px);
+    background-color: #eaeaea;
+  }
+  
+  /* Phần bên trái chứa ảnh */
+  .product-image-container {
+    flex: 1; /* Chiếm 1 phần nhỏ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ảnh sản phẩm */
+  .product-image-card {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Phần bên phải chứa thông tin */
+  .product-info-card {
+    flex: 2; /* Chiếm phần lớn bên phải */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    text-align: left;
+  }
+  
+  /* Tên sản phẩm */
+  .product-title-card {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    text-transform: capitalize;
+  }
+  
+  /* Đánh giá sao */
+  .product-rating-card {
+    color: #f39c12;
+    font-size: 14px;
+  }
+  
+  /* Giá sản phẩm */
+  .product-price-card {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: 700;
+  }
+  

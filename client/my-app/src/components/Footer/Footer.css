@@ -1,0 +1,111 @@
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.newsletter {
+    background-color: red;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.newsletter-input input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.newsletter-input input::placeholder {
+    color: white;
+}
+
+.newsletter-input button {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.footer-section {
+    text-align: left;
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-tags {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-tags h3 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-tags p {
+    font-size: 14px;
+    opacity: 0.8;
+}

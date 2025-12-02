@@ -1,0 +1,86 @@
+.profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2b4eff;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #2b4eff33;
+  padding-bottom: 6px;
+}
+
+.user-info p,
+.order-card p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.user-info {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid #2b4eff;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  padding: 16px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-card ul {
+  margin-left: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.order-card li {
+  margin: 4px 0;
+}
+
+.loading,
+.error,
+.no-orders {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .order-card {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,50 @@
+/* breadcrumb.css */
+
+/* Container cho breadcrumb */
+.text-sm {
+    font-size: 20px; /* Điều chỉnh font size */
+    color: #333; /* Màu chữ */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    align-items: center;
+}
+
+/* Style cho các liên kết breadcrumb */
+.text-sm a {
+    text-decoration: none;
+    color: #007bff; /* Màu liên kết */
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+/* Khi hover vào breadcrumb, thay đổi màu */
+.text-sm a:hover {
+    color: #0056b3;
+}
+
+/* Icon mũi tên giữa các phần breadcrumb */
+.text-sm a svg {
+    margin-left: 8px;
+    color: #888; /* Màu cho icon */
+    font-size: 16px;
+}
+
+/* Loại bỏ icon ở breadcrumb cuối cùng */
+.text-sm a:last-child svg {
+    display: none;
+}
+
+/* Các phần tử breadcrumb */
+.text-sm span {
+    margin-right: 4px;
+}
+
+/* Khoảng cách giữa các breadcrumb */
+.text-sm a:not(:last-child) {
+    margin-right: 8px;
+}
+.capitalize {
+    text-transform: capitalize;
+}

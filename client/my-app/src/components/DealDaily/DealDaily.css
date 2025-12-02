@@ -1,0 +1,188 @@
+/* -------------------- Container chính của DealDaily -------------------- */
+.deal-container {
+    border: 3px solid #ddd;
+    width: 93%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------- Phần hiển thị sao đánh giá -------------------- */
+.product-stars1 {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.product-stars1 svg {
+    font-size: 28px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* Màu sao đã đánh giá */
+.product-stars1 .filled-star {
+    color: #FFD700;
+}
+
+/* Màu sao chưa đánh giá */
+.product-stars1 .outline-star {
+    color: #C0C0C0;
+}
+
+/* Hiệu ứng hover khi trỏ chuột vào sao */
+.product-stars1 svg:hover {
+    transform: scale(1.2);
+}
+
+/* -------------------- Phần chứa ảnh và thông tin sản phẩm -------------------- */
+.deal-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Giá sản phẩm */
+.product-price1 {
+    font-size: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px; /* Tạo khoảng cách giữa giá và nút */
+}
+
+/* Tên sản phẩm */
+.product-title1 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Ảnh sản phẩm */
+.deal-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* -------------------- Tiêu đề Deal Daily -------------------- */
+.deal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 5px; /* Đưa lên sát mép trên cùng */
+}
+
+/* Ngôi sao trái */
+.deal-icon1 {
+    color: #f39c12;
+    margin-right: 5px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Chữ Deal Daily */
+.deal-text {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: #e74c3c;
+    text-transform: uppercase;
+}
+
+/* Ngôi sao phải */
+.deal-icon2 {
+    color: #f39c12;
+    margin-left: 5px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* -------------------- Nút Options -------------------- */
+.button-container-DD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px; /* Khoảng cách nhỏ giữa giá và nút */
+}
+
+/* Style cho nút chính */
+.custom-button-DD {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: center;
+    width: 200px;
+    padding: 10px 20px;
+
+    /* Màu nền đỏ */
+    background-color: #e74c3c;
+
+    /* Màu chữ và icon trắng */
+    color: #fff;
+
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    /* Đảm bảo nút không bị che khuất */
+    position: relative;
+    z-index: 1;
+
+    /* Hiệu ứng bóng nhẹ */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon trong nút giữ màu trắng */
+.custom-button-DD svg {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Hover đổi nền sang xanh dương đậm và phóng to nhẹ */
+.custom-button-DD:hover {
+    background-color: #1e3a8a;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Giữ icon trắng khi hover */
+.custom-button-DD:hover svg {
+    color: #fff;
+}
+
+/* Hiệu ứng bấm nút */
+.custom-button-DD:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------- Hiệu ứng lấp lánh cho ngôi sao -------------------- */
+@keyframes glow {
+    from {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
